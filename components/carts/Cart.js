@@ -53,7 +53,7 @@ export default function Cart(i) {
       <div className="flex flex-col md:gap-5">
         <div>
           <h1 className="p-1 font-bold">{i.name}</h1>
-          <p className="text-xs p-1 md:w-[180px] text-neutral-500">{i.detail}</p>
+          <p className="text-xs p-1 w-20 md:w-[180px] text-neutral-500">{i.detail}</p>
         </div>
 
         <div className="flex items-center justify-between">
