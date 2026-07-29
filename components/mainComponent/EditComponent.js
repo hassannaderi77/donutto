@@ -15,7 +15,7 @@ export default function EditComponent() {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => {
-        setItem(data.products)
+        setItem(data.products ?? [])
         setLoading(false)
       })
       .catch((err) => console.log(err));

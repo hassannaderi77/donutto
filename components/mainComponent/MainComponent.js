@@ -57,8 +57,8 @@ export default function MainComponent() {
         const productsData = await productsRes.json();
         const commentsData = await commentsRes.json();
 
-        setItem(productsData.products);
-        setComments(commentsData.comments); // <<< اینجا تغییر دادیم
+        setItem(productsData.products ?? []);
+        setComments(commentsData.comments ?? []); // <<< اینجا تغییر دادیم
         setLoading(false)
       } catch (err) {
         console.error(err);
